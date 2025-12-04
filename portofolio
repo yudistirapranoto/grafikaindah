@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grafika Karya Indah Lestari — Percetakan Offset</title>
+  <meta name="description" content="Grafika Karya Indah Lestari — Kalender, Sticker, Custom Packaging, Numerator, Agenda Buku. Harga bersaing & konsultasi packaging."/>
+  <style>
+    :root{
+      --accent:#0f4c81;
+      --accent-2:#f29d38;
+      --muted:#6b7280;
+      --bg:#fafafa;
+      --card:#ffffff;
+      --radius:14px;
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111;}
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:24px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#2b7fbf);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+    nav{display:flex;gap:12px}
+    nav a{color:var(--accent);text-decoration:none;font-weight:600}
+    /* Hero */
+    .hero{display:flex;gap:24px;align-items:center;margin-top:22px}
+    .hero-left{flex:1;background:linear-gradient(180deg,rgba(15,76,129,0.06),transparent);padding:22px;border-radius:12px}
+    .hero h2{margin:0 0 8px;font-size:26px;color:var(--accent)}
+    .hero p{margin:0 0 16px;color:var(--muted)}
+    .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .specs{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .spec{background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.06);font-size:14px}
+    .hero-right{width:320px;min-width:220px}
+    .card{background:var(--card);padding:14px;border-radius:14px;box-shadow:0 8px 30px rgba(16,24,40,0.06)}
+    /* Produk grid */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+    .prod{background:var(--card);padding:12px;border-radius:12px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+    .prod img{width:100%;height:140px;object-fit:cover;border-radius:8px;background:#eee}
+    .prod h3{margin:0;font-size:16px}
+    .prod p{margin:0;color:var(--muted);font-size:13px}
+    .badge{font-size:12px;padding:6px 8px;border-radius:10px;background:rgba(15,76,129,0.08);color:var(--accent)}
+    /* Portfolio */
+    .portfolio{margin-top:24px}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px;cursor:pointer}
+    /* Features */
+    .features{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .feat{flex:1;min-width:180px;background:linear-gradient(180deg,#fff,#fff);padding:12px;border-radius:12px;box-shadow:0 6px 20px rgba(16,24,40,0.04)}
+    .steps{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .step{background:var(--card);padding:12px;border-radius:10px;flex:1;min-width:180px}
+    footer{margin-top:28px;padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(15,76,129,0.03),transparent)}
+    /* responsive */
+    @media(max-width:900px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(3,1fr)}
+      .hero{flex-direction:column}
+      .hero-right{width:100%}
+    }
+    @media(max-width:540px){
+      nav{display:none}
+      header{gap:10px}
+      .grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+    /* small helpers */
+    .muted{color:var(--muted);font-size:13px}
+    .contact-btn{display:inline-block;padding:10px 12px;background:var(--accent-2);color:#fff;border-radius:10px;text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">GKI</div>
+        <div>
+          <h1>Grafika Karya Indah Lestari</h1>
+          <p class="lead">Offset Printing • Packaging • Corporate Solutions</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#produk">Produk</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#cara-order">Cara Order</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-left card">
+        <h2>Solusi Cetak Offset — Harga Kompetitif, Konsultasi Packaging</h2>
+        <p>Kalender, Sticker, Custom Packaging, Numerator, dan Agenda Buku. Produksi presisi, finishing lengkap, dan konsultasi desain struktur packaging untuk meningkatkan nilai produk Anda.</p>
+        <a class="cta" href="#cara-order">Mulai Konsultasi</a>
+
+        <div class="specs">
+          <div class="spec"><strong>Fast Turnaround</strong><div class="muted">Estimasi 3–10 hari kerja</div></div>
+          <div class="spec"><strong>MOQ</strong><div class="muted">Mulai 100 pcs (tergantung produk)</div></div>
+          <div class="spec"><strong>Finishing</strong><div class="muted">Foil, Spot UV, Laminasi, Emboss</div></div>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="card">
+          <h4 style="margin:0 0 8px">Kontak Cepat</h4>
+          <div class="muted">WhatsApp untuk estimasi & sampel</div>
+          <div style="margin-top:10px">
+            <a class="contact-btn" href="https://wa.me/6281234567890" target="_blank">Chat WA — (0812) 3456 7890</a>
+          </div>
+          <hr style="margin:12px 0;border:none;border-top:1px solid #eee">
+          <div class="muted" style="font-size:13px">Alamat workshop:</div>
+          <div style="font-weight:600">Jl. Contoh No.12, Yogyakarta</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="produk" style="margin-top:18px">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <h2 style="margin:0">Produk Unggulan</h2>
+        <div class="badge">5 Fokus Produk</div>
+      </div>
+
+      <div class="grid" style="margin-top:12px">
+        <!-- Kalender -->
+        <article class="prod">
+          <img src="https://via.placeholder.com/600x400?text=Kalender" alt="Kalender">
+          <h3>Kalender (Desk & Wall)</h3>
+          <p>Full-color offset, laminasi, spiral/spiral premium. Cocok corporate gifting & promo akhir tahun.</p>
+        </article>
+
+        <!-- Sticker -->
+        <article class="prod">
+          <img src="https://via.placeholder.com/600x400?text=Sticker" alt="Sticker">
+          <h3>Sticker & Label</h3>
+          <p>Paper/vinyl/hologram. Tahan lama & warna tajam—ideal untuk kemasan produk.</p>
+        </article>
+
+        <!-- Packaging -->
+        <article class="prod">
+          <img src="https://via.placeholder.com/600x400?text=Custom+Packaging" alt="Custom Packaging">
+          <h3>Custom Packaging</h3>
+          <p>Folding box, dus, sleeve. Struktur & desain packaging: konsultasi ide sampai prototipe.</p>
+        </article>
+
+        <!-- Numerator -->
+        <article class="prod">
+          <img src="https://via.placeholder.com/600x400?text=Numerator" alt="Numerator">
+          <h3>Numerator</h3>
+          <p>Nomor serial untuk buku tabungan, kupon, tiket. Rapi, akurat, dan cepat.</p>
+        </article>
+
+        <!-- Agenda buku -->
+        <article class="prod">
+          <img src="https://via.placeholder.com/600x400?text=Agenda+Buku" alt="Agenda Buku">
+          <h3>Agenda Buku & Jurnal</h3>
+          <p>Custom agenda, hardcover atau softcover, finishing premium untuk corporate gifting.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="portofolio" class="portfolio">
+      <h2 style="margin-bottom:8px">Portofolio (Contoh Hasil Cetak)</h2>
+      <p class="muted" style="margin-top:0">Klik gambar untuk memperbesar. Ganti gambar placeholder dengan foto produk Anda.</p>
+      <div class="gallery" id="gallery">
+        <img src="https://via.placeholder.com/400x300?text=Project+1" alt="Project 1" data-full="https://via.placeholder.com/1000x800?text=Project+1">
+        <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Project 2" data-full="https://via.placeholder.com/1000x800?text=Project+2">
+        <img src="https://via.placeholder.com/400x300?text=Project+3" alt="Project 3" data-full="https://via.placeholder.com/1000x800?text=Project+3">
+        <img src="https://via.placeholder.com/400x300?text=Project+4" alt="Project 4" data-full="https://via.placeholder.com/1000x800?text=Project+4">
+      </div>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>Keunggulan Produksi</h2>
+      <div class="features">
+        <div class="feat"><strong>Harga Sangat Bersaing</strong><div class="muted">Efisiensi plano & up-layout untuk menekan biaya produksi klien.</div></div>
+        <div class="feat"><strong>Konsultasi Packaging</strong><div class="muted">Struktur & desain packaging yang efisien dan elegan.</div></div>
+        <div class="feat"><strong>Finishing Lengkap</strong><div class="muted">Spot UV, foil, emboss, laminasi, dan custom finishing lain.</div></div>
+      </div>
+    </section>
+
+    <section id="cara-order">
+      <h2 style="margin-top:18px">Cara Order — 3 Langkah Mudah</h2>
+      <div class="steps">
+        <div class="step">
+          <strong>1. Konsultasi</strong>
+          <div class="muted">Sampaikan brief, ukuran, bahan, jumlah. Kami bantu estimasi.</div>
+        </div>
+        <div class="step">
+          <strong>2. Konfirmasi & Produksi</strong>
+          <div class="muted">Setelah desain & harga disetujui, produksi dimulai sesuai jadwal.</div>
+        </div>
+        <div class="step">
+          <strong>3. Pengiriman / Ambil</strong>
+          <div class="muted">Pengiriman terjadwal atau dapat diambil langsung di workshop.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="kontak">
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+        <div>
+          <h3 style="margin:0">Kontak & Lokasi</h3>
+          <div class="muted">WhatsApp: <strong>(0812) 3456 7890</strong></div>
+          <div class="muted">Email: <strong>info@grafikakil.com</strong></div>
+          <div class="muted">Alamat: Jl. Contoh No.12, Yogyakarta</div>
+        </div>
+        <div style="text-align:right">
+          <div style="margin-bottom:8px">Butuh estimasi cepat?</div>
+          <a class="contact-btn" href="https://wa.me/6281234567890" target="_blank">Chat Sekarang</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Simple JS: mobile menu & gallery lightbox -->
+  <script>
+    // Lightbox
+    document.querySelectorAll('#gallery img').forEach(i=>{
+      i.addEventListener('click', e=>{
+        const src = e.currentTarget.dataset.full || e.currentTarget.src;
+        const overlay = document.createElement('div');
+        overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;z-index:9999';
+        const img = document.createElement('img');
+        img.src = src;
+        img.style.maxWidth='90%';
+        img.style.maxHeight='90%';
+        img.style.borderRadius='8px';
+        overlay.appendChild(img);
+        overlay.addEventListener('click',()=>document.body.removeChild(overlay));
+        document.body.appendChild(overlay);
+      });
+    });
+  </script>
+</body>
+</html>
